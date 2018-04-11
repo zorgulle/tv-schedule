@@ -107,6 +107,7 @@ class ProgrammeTv:
         return shows
         
 
+
 @app.route('/tonight', methods=['GET'])
 def tv_schedule():
     """List all tv show in prime time
@@ -122,4 +123,4 @@ def tv_schedule():
     return tv_shows
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
